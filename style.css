@@ -1,0 +1,49 @@
+#table {
+    /* font-display: center; */
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    /* margin-top: 50px; */
+    width: 400px;
+    height: 400px;
+    background-color: green;
+    border: 2px solid brown;
+    border-radius: 15px;
+    left: 50px;
+    /* text-align: center; */
+}
+#messages{
+    width: 200px;
+    height: 60px;
+}
+#dealer-hand, #player-hand {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 75%;
+    background-color: chartreuse;
+    /* position: absolute; */
+    position: relative;
+    left: 50px;
+    height: 60px;
+    padding: 20px;
+    /* text-align: center; */
+    
+}
+
+.buttons{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+
+}
+
+ /* #deal-button, #hit-button, #stand-button{
+    display: flex;
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    /* align-content: center; */
+    /* text-align: center; */
+/* } */
+

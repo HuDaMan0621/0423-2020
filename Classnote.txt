@@ -1,0 +1,15 @@
+Dom Event
+
+Load - when the resource dependents have finished loading 
+Error,
+Online/offline
+resize
+scroll 
+
+Media events - related to audio/video playback
+....
+
+3 ways to handle events ============
+
+
+addEventListener is the preferred way to add events 

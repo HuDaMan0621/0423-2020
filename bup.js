@@ -1,4 +1,27 @@
 
+// var Deck 
+
+// var kingOfHearts = [{point: 13, sutit 'hearts'}];
+//     points: 13; 
+//     suit: 'heart'
+
+
+// var Deck = [
+//     "spades",[
+//         "points":
+//     ], 
+//     "hearts" [
+
+//     ], 
+//     "clubs" [
+
+//     ], 
+//     "diamonds"[
+
+//     ]
+
+// ]
+
 //loop to create the cards
 
 const spades = document.querySelector
@@ -35,6 +58,11 @@ function shuffle() {
     return deck;
 }
 
+// function drawTwoCard() {
+
+//     var shuffledDeck = shuffle();
+//     return shuffledDeck.pop();
+// }
 
 // var shuffledDeck = shuffle(print);
 function drawACard() {
@@ -63,10 +91,11 @@ function getCardPic(card) {
 
 }
 
+
 function calculatePoints() { 
     const dealerHandPoints = (drawACard[values]+drawACard2[values]);
-    const sum = dealerHandPoints;
-    console.log(sum);
+
+    console.log(dealerHandPoints);
 }
 
 // function calculatePoints {
@@ -81,6 +110,70 @@ function calculatePoints() {
 
 // var randomCard = getRandomCardFromDeck(print);
 // console.log(randomCard);
+
+
+
+
+// var aceOfSpades = { point: 1, suit: 'Spades' };
+// var twoOfSpades = { point: 2, suit: 'Spades' };
+// var threeOfSpades = { point: 3, suit: 'Spades' };
+// var fourOfSpades = { point: 4, suit: 'Spades' };
+// var fivOfSpades = { point: 5, suit: 'Spades' };
+// var sixOfSpades = { point: 6, suit: 'Spades' };
+// var sevenOfSpades = { point: 7, suit: 'Spades' };
+// var eightOfSpades = { point: 8, suit: 'Spades' };
+// var noneOfSpades = { point: 9, suit: 'Spades' };
+// var tenOfSpades = { point: 10, suit: 'Spades' };
+// var jackOfSpades = { point: 11, suit: 'Spades' };
+// var queenOfSpades = { point: 12, suit: 'Spades' };
+// var kingOfSpades = { point: 13, suit: 'Spades' };
+
+// var aceOfHearts = { point: 1, suit: 'hearts' };
+// var twoOfHearts = { point: 2, suit: 'hearts' };
+// var threeOfHearts = { point: 3, suit: 'hearts' };
+// var fourOfHearts = { point: 4, suit: 'hearts' };
+// var fivOfHearts = { point: 5, suit: 'hearts' };
+// var sixOfHearts = { point: 6, suit: 'hearts' };
+// var sevenOfHearts = { point: 7, suit: 'hearts' };
+// var eightOfHearts = { point: 8, suit: 'hearts' };
+// var noneOfHearts = { point: 9, suit: 'hearts' };
+// var tenOfHearts = { point: 10, suit: 'hearts' };
+// var jackOfHearts = { point: 11, suit: 'hearts' };
+// var queenOfHearts = { point: 12, suit: 'hearts' };
+// var kingOfHearts = { point: 13, suit: 'hearts' };
+
+// var aceOfClubs = { point: 1, suit: 'Clubs' };
+// var twoOfClubs = { point: 2, suit: 'Clubs' };
+// var threeOfClubs = { point: 3, suit: 'Clubs' };
+// var fourOfClubs = { point: 4, suit: 'Clubs' };
+// var fivOfClubs = { point: 5, suit: 'Clubs' };
+// var sixOfClubs = { point: 6, suit: 'Clubs' };
+// var sevenOfClubs = { point: 7, suit: 'Clubs' };
+// var eightOfClubs = { point: 8, suit: 'Clubs' };
+// var noneOfClubs = { point: 9, suit: 'Clubs' };
+// var tenOfClubs = { point: 10, suit: 'Clubs' };
+// var jackOfClubs = { point: 11, suit: 'Clubs' };
+// var queenOfClubs = { point: 12, suit: 'Clubs' };
+// var kingOfClubs = { point: 13, suit: 'Clubs' };
+
+// var aceOfDiamonds = { point: 1, suit: 'Diamonds' };
+// var twoOfDiamonds = { point: 2, suit: 'Diamonds' };
+// var threeOfDiamonds = { point: 3, suit: 'Diamonds' };
+// var fourOfDiamonds = { point: 4, suit: 'Diamonds' };
+// var fivOfDiamonds = { point: 5, suit: 'Diamonds' };
+// var sixOfDiamonds = { point: 6, suit: 'Diamonds' };
+// var sevenOfDiamonds = { point: 7, suit: 'Diamonds' };
+// var eightOfDiamonds = { point: 8, suit: 'Diamonds' };
+// var noneOfDiamonds = { point: 9, suit: 'Diamonds' };
+// var tenOfDiamonds = { point: 10, suit: 'Diamonds' };
+// var jackOfDiamonds = { point: 11, suit: 'Diamonds' };
+// var queenOfDiamonds = { point: 12, suit: 'Diamonds' };
+// var kingOfDiamonds = { point: 13, suit: 'Diamonds' };
+
+
+
+
+
 
 const dealBtn = document.querySelector("#deal-button"); //links the deal button
 const dealerHand = document.querySelector("#dealer-hand"); //links the dealer hand 
@@ -117,11 +210,8 @@ dealBtn.addEventListener('click', function () {
 })
 
 hitBtn.addEventListener('click', function () {
-    
-    var playerCard = drawACard();
-    var playerCardUrl = getCardPic(playerCard);
     const cardHit = document.createElement('img'); //created the holder
-    cardHit.setAttribute('src', playerCardUrl);
+    cardHit.setAttribute('src', './image/3C.jpg'); //set the card image to from the location
     playerHand.append(cardHit);
 
 })
